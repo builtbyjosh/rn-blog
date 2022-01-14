@@ -1,14 +1,18 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React, {useContext} from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { Context } from '../context/BlogContext';
 
-const ShowScreen = () => {
+const ShowScreen = ({ navigation }) => {
+  const { state } = useContext(Context)
+  const blogPost = state.find((blogPost) => blogPost.id === navigation.getParam('id')) 
+  
   return (
     <View>
-      <Text></Text>
+      <Text>{blogPost.title}</Text>
     </View>
-  )
-}
+  );
+};
 
-export default ShowScreen
+export default ShowScreen;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
