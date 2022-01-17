@@ -10,10 +10,11 @@ const EditScreen = ({navigation}) => {
     blogPost => blogPost.id === navigation.getParam('id')
   );
 
- return <BlogPostForm onSubmit={(title, content) => { console.log(title,content)}} blogPost={blogPost}/>
+ return <BlogPostForm onSubmit={(title, content) => { console.log(title,content)}} initialValues={{title: blogPost.title, content: blogPost.content}}/>
 }
 
 export default EditScreen
 
 const styles = StyleSheet.create({
 });
+// initialValues={{title: blogPost.title, content: blogPost.content}}
