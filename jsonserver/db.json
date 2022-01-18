@@ -1,0 +1,24 @@
+{
+  "blogposts": [
+    {
+      "id": 1,
+      "title": "API POST",
+      "content": "content for my post"
+    },
+    {
+      "title": "bull ave a lot of",
+      "content": "null I know I just got to see the kids",
+      "id": 2
+    },
+    {
+      "title": "🐂🐂 the other one",
+      "content": "♉♉ I have a lot",
+      "id": 3
+    },
+    {
+      "title": "But I don't think it",
+      "content": "bull and I have a lot",
+      "id": 4
+    }
+  ]
+}
