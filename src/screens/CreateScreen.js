@@ -13,7 +13,7 @@ const CreateScreen = ({ navigation }) => {
           navigation.navigate('Index');
         });
       }}
-      initialValues={{title: null, content: null}}
+      
     />
   );
 };
